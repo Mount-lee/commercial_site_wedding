@@ -11,6 +11,10 @@ def main():
 def menutr():
     return render_template('menutr.html')
 
+@app.route("/search")
+def search():
+    return render_template('menutr.html')
+
 @app.route("/menueng")
 def english():
     return render_template('english-1.html')
@@ -86,6 +90,86 @@ def wedding():
 @app.route("/couple")
 def couple():
     return render_template('couple.html')
+
+@app.route("/blog/melisainci")
+def blog_1():
+    return render_template("blog/melisainci-umutkurt-dugunfotograflari.html")
+
+@app.route("/blog/parma")
+def blog_2():
+    return render_template("blog/parma-sole-dugun-fotograflari-beril-mert.html")
+
+@app.route("/blog/ajia")
+def blog_3():
+    return render_template("blog/ajia-hotel-dugun-fotograflari-/-yasemin-kadri.html")
+
+@app.route("/blog/italya")
+def blog_4():
+    return render_template("blog/italya-toskana-dugun-fotograflari-ceren-taner.html")
+
+@app.route("/blog/hint")
+def blog_5():
+    return render_template("blog/hint-dugunu-istanbul-hilton-bosphorus.html")
+
+@app.route("/blog/bodrum")
+def blog_6():
+    return render_template("blog/bodrum-ruins-dugun-fotograflari.html")
+
+@app.route("/blog/ciragan")
+def blog_7():
+    return render_template("blog/ciragan-palace-dugun-fotograflari.html")
+
+@app.route("/blog/flow")
+def blog_8():
+    return render_template("blog/flow-datca-dugun-fotograflari-mette-can.html")
+
+@app.route("/blog/dusseldorf")
+def blog_9():
+    return render_template("blog/dusseldorf-dugun-fotograflari-melisaurel.html")
+
+@app.route("/blog/almira")
+def blog_10():
+    return render_template("blog/almira-hotel-bursa-dugun-fotograflari-eda-yigit.html")
+
+@app.route("/blog/indian")
+def blog_eng_1():
+    return render_template("blog-english/indian-wedding-in-istanbul-hilton-bosphorus.html")
+
+@app.route("/blog/wedding_in")
+def blog_eng_2():
+    return render_template("blog-english/wedding-in-tuscany-italy-/-ceren-taner.html")
+
+@app.route("/blog/bodrum")
+def blog_eng_3():
+    return render_template("blog-english/bodrum-ruins-wedding-photos.html")
+
+@app.route("/blog/ciragan")
+def blog_eng_4():
+    return render_template("blog-english/ciragan-palace-wedding-photos.html")
+
+@app.route("/blog/istanbul")
+def blog_eng_5():
+    return render_template("blog-english/istanbul-pre-wedding-photos-in-a-rainy-day.html")
+
+@app.route("/blog/prince_island")
+def blog_eng_6():
+    return render_template("blog-english/prince-island-wedding-photography-dunja-sina.html")
+
+@app.route("/blog/istanbulpreweddingphotos")
+def blog_eng_7():
+    return render_template("blog-english/istanbulpreweddingphotos.html")
+
+@app.route("/blog/womenphotogpherteam")
+def blog_eng_8():
+    return render_template("blog-english/womenphotogpherteam.html")
+
+@app.route("/blog/antalya_akra")
+def blog_eng_9():
+    return render_template("blog-english/antalya-akra-barut-wedding-photos.html")
+
+@app.route("/blog/nancy_chateau")
+def blog_eng_10():
+    return render_template("blog-english/nancy-chateau-vandelaville-france-wedding.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
